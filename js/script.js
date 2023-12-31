@@ -75,3 +75,21 @@ const typed = new Typed(' .multiple-text', {
     backDelay: 1000,
     loop: true
 })
+
+// light theme
+var nightIcon = document.getElementById("light-icon");
+
+nightIcon.onclick = function() {
+    console.log("Icon clicked!")
+    document.body.classList.toggle("light-theme");
+    var moonIcon = nightIcon.querySelector('.bx-moon');
+    var sunIcon = nightIcon.querySelector('.bx-sun');;
+
+    if (document.body.classList.contains("light-theme")) {
+        moonIcon.style.display = 'inline-block';
+        sunIcon.style.display = 'none';
+    } else {
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'inline-block';
+    }
+}
