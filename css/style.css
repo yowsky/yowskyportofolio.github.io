@@ -451,6 +451,11 @@ span {
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
+        margin-left: auto;
+    }
+    
+    #light-icon {
+        margin-left: 1rem;
     }
 
     .navbar {
